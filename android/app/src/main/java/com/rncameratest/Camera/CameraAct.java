@@ -146,4 +146,10 @@ public class CameraAct extends Activity {
         }
 
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        reactContext=null;
+    }
 }
